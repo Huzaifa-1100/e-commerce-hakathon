@@ -1,6 +1,8 @@
 import React from "react";
 import CardHeading from "./sub/cardHeading";
 import { BsPhone } from "react-icons/bs";
+import { CategoryData } from "../../utils/categoryData";
+import CategoryCard from "./sub/categoryCard";
 
 const Category = () => {
   return (
@@ -15,13 +17,14 @@ const Category = () => {
           />
         </div>
         {/* Bottom Card */}
-        <div className="my-10">
-          <div className="border border-button border-opacity-30 w-[170px] h-[145px] rounded-md flex flex-col items-center justify-center hover:bg-secondary2 hover:text-text transition-all duration-5 00">
-            <div className="text-4xl">
-              <BsPhone />
-            </div>
-            <p className="poppins-regular mt-4">Phone</p>
-          </div>
+        <div className="my-10 gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+          {CategoryData.map((category, index) => (
+            <CategoryCard
+              key={index}
+              name={category.name}
+              icon={category.icon}
+            />
+          ))}
         </div>
       </div>
     </div>

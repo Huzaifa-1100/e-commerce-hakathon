@@ -1,8 +1,3 @@
-
-
-
-
-
 // Sports data
 
 export const SportsData = [
