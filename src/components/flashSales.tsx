@@ -1,20 +1,38 @@
 import React from "react";
-import Time from "./sub/time";
-import { TimeData } from "../../utils/data";
+import { FlashSale } from "../../utils/data";
+import ProductCard from "./sub/productCard";
+import { Button } from "./ui/button";
+import CardHeading from "./sub/cardHeading";
 
 const FlashSales = () => {
   return (
-    <div className="wrapper">
-      <div className="mb-5">
-        <span className="poppins-today border-l-8 border-secondary2 text-secondary2 whitespace-pre ">{`  Today’s`}</span>
-      </div>
-      {/*  Heading */}
-      <div className="flex gap-10">
-        <h1 className="inter-flash-sale text-text2">Flash Sales</h1>
-        {/* days and time */}
-        {TimeData.map((item, index) => (
-          <Time heading={item.heading} content={item.content} />
+    <div className="wrapper mt-24">
+      {/* Top Side */}
+      <CardHeading
+        subHeading={"Today's"}
+        mainHeading={"Flash Sales"}
+        daysTime={true}
+        arrowType={true}
+      />
+
+      {/* Bottom cards */}
+      <div className="my-10 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
+        {FlashSale.map((product, index) => (
+          <ProductCard
+            key={index}
+            imageSrc={product.imageSrc}
+            name={product.name}
+            price={product.price}
+            discount={product.discount}
+            rating={product.rating}
+          />
         ))}
+      </div>
+
+      <div className="flex my-20 ">
+        <Button className="bg-button2 mx-auto hover:bg-secondary hover:text-button2 text-text py-6 px-12">
+          View All Products
+        </Button>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Category from "@/components/category";
 import FlashSales from "@/components/flashSales";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -7,17 +8,20 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <>
-   {/* Top Header */}
-   <TopHeader/>
-   {/* Header */}
-   <Header/>
-   {/* Hero Section */}
-   <Hero/>
-   {/* Flash sales */}
-   <FlashSales/>
-   {/* Footer Section */}
-   <Footer/>
-   </>
+    <>
+      {/* Top Header */}
+      <TopHeader />
+      {/* Header */}
+      <Header />
+      {/* Hero Section */}
+      <Hero />
+      {/* Flash sales */}
+      <FlashSales />
+      {/* Footer Section */}
+      {/* Browse by categroy */}
+      <Category />
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }

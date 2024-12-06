@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import HeroSidebar from "./sub/sidebar";
 
 const Hero = () => {
   return (
-    <div className='h-screen'>
-        
+    <div className="wrapper">
+      <div>
+        <HeroSidebar />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

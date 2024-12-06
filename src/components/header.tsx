@@ -7,7 +7,7 @@ import { IoCartOutline } from "react-icons/io5";
 const Header = () => {
   return (
     <header>
-      <div className="wrapper flex justify-between mt-[44px]">
+      <div className="wrapper flex justify-between items-center mt-[44px]">
         {/* left side /logo */}
         <div>
           <h1 className="inter-logo text-text2">Exclusive</h1>

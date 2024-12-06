@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         button: '#000000',
+        button2: "#DB4444",
         text: '#FAFAFA',
         text2: '#000000',
         secondary: "#F5F5F5",

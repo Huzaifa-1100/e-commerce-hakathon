@@ -1,3 +1,8 @@
+
+
+
+
+
 // Sports data
 
 export const SportsData = [
@@ -30,7 +35,7 @@ export const TimeData = [
         heading: "days",
         content: "03"
     },
-    
+
     {
         heading: "Hours",
         content: "23"
@@ -43,7 +48,37 @@ export const TimeData = [
         heading: "Seconds",
         content: "03"
     },
+]
 
+// Flase Sales data
 
-
+export const FlashSale = [
+    {
+        imageSrc: "/flashSales/01.png",
+        name: "HAVIT HV-G92 Gamepad",
+        price: 160,
+        discount: 40,
+        rating: 4.4,
+    },
+    {
+        imageSrc: "/flashSales/02.png",
+        name: "AK-900 Wired Keyboard",
+        price: 1160,
+        discount: 35,
+        rating: 3.4,
+    },
+    {
+        imageSrc: "/flashSales/03.png",
+        name: "IPS LCD Gaming Monitor",
+        price: 400,
+        discount: 30,
+        rating: 4.9,
+    },
+    {
+        imageSrc: "/flashSales/04.png",
+        name: "S-Series Comfort Chair ",
+        price: 400,
+        discount: 25,
+        rating: 4.9,
+    }
 ]
