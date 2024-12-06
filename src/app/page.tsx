@@ -1,3 +1,4 @@
+import BestSellingProducts from "@/components/bestSellingProducts";
 import Category from "@/components/category";
 import FlashSales from "@/components/flashSales";
 import Footer from "@/components/footer";
@@ -20,6 +21,8 @@ export default function Home() {
       {/* Footer Section */}
       {/* Browse by categroy */}
       <Category />
+      {/* Best Selling Products */}
+      <BestSellingProducts/>
       {/* Footer */}
       <Footer />
     </>

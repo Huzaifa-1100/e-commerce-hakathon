@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         button: '#000000',
         button2: "#DB4444",
+        hoverButton: "#E07575",
         text: '#FAFAFA',
         text2: '#000000',
         secondary: "#F5F5F5",

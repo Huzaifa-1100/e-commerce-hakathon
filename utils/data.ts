@@ -77,3 +77,40 @@ export const FlashSale = [
         rating: 4.9,
     }
 ]
+
+// Best Selling Porducts
+
+export const BsProducst = [
+    {
+        url: "/bsProducts/01.png",
+        name: "The north coat",
+        price: 360,
+        discount: 25,
+        rating: 3.25,
+        dis: 260
+    },
+    {
+        url: "/bsProducts/02.png",
+        name: "Gucci duffle bag",
+        price: 1160,
+        discount: 25,
+        rating: 3.25,
+        dis: 960
+    },
+    {
+        url: "/bsProducts/03.png",
+        name: "RGB liquid CPU Cooler",
+        price: 170,
+        discount: 25,
+        rating: 3.25,
+        dis: 160
+    },
+    {
+        url: "/bsProducts/04.png",
+        name: "Small BookSelf",
+        price: 360,
+        discount: 25,
+        rating: 3.25,
+        dis: 0
+    },
+]
