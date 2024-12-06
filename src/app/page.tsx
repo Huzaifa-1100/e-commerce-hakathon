@@ -4,6 +4,7 @@ import FlashSales from "@/components/flashSales";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import { MusicEnhancer } from "@/components/musicExp";
 import TopHeader from "@/components/topHeader";
 import Image from "next/image";
 
@@ -23,6 +24,8 @@ export default function Home() {
       <Category />
       {/* Best Selling Products */}
       <BestSellingProducts/>
+      {/* Enhance you music experience */}
+      <MusicEnhancer/>  
       {/* Footer */}
       <Footer />
     </>
