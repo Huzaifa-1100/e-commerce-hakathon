@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import { MusicEnhancer } from "@/components/musicExp";
+import OurProducts from "@/components/ourProducts";
 import TopHeader from "@/components/topHeader";
 import Image from "next/image";
 
@@ -26,6 +27,8 @@ export default function Home() {
       <BestSellingProducts/>
       {/* Enhance you music experience */}
       <MusicEnhancer/>  
+      {/* Explore Our Products */}
+      <OurProducts/>
       {/* Footer */}
       <Footer />
     </>

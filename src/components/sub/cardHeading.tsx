@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import Arrows from "./arrows";
-import { TimeData } from "../../../utils/data";
+
+import { timeData } from "../../../utils/data";
 import Time from "./time";
-import ViewButton from "./viewButton";
+
 import { Separator } from "./seprator";
 
 interface Iprops {
@@ -26,14 +26,14 @@ const CardHeading: FC<Iprops> = ({ subHeading, mainHeading, daysTime }) => {
             {/* days and time */}
             <div className="flex gap-x-5 items-center justify-center">
               {daysTime &&
-                TimeData.map((item, index) => (
+                timeData.map((item, index) => (
                   <React.Fragment key={index}>
                     <Time heading={item.heading} content={item.content} />
                     {/* Render ':' only if not the last item */}
-                    {index < TimeData.length - 1 && (
+                    {index < timeData.length - 1 && (
                       <span className="text-4xl text-hoverButton">:</span>
                     )}
-                    {index < TimeData.length - 1 && <Separator />}
+                    {index < timeData.length - 1 && <Separator />}
                   </React.Fragment>
                 ))}
             </div>

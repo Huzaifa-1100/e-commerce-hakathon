@@ -10,6 +10,7 @@ interface ProductCardProps {
   discount?: number;
   rating: number;
   dPrice?: number;
+  isNeew: boolean;
 }
 
 const ProductCard: FC<ProductCardProps> = ({
@@ -19,6 +20,7 @@ const ProductCard: FC<ProductCardProps> = ({
   discount,
   rating,
   dPrice,
+  isNeew,
 }) => {
   // Calculate discounted price
   const discountedPrice = discount ? price - (price * discount) / 100 : price;
@@ -29,10 +31,17 @@ const ProductCard: FC<ProductCardProps> = ({
   return (
     <div className="relative bg-white shadow-md rounded-lg overflow-hidden  h-[350px] group">
       {/* Discount Badge */}
-      {discount && (
-        <span className="absolute z-10 top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md">
-          -{discount}%
+
+      {isNeew ? (
+        <span className="absolute z-10 top-2 left-2 bg-button1 text-text poppins-regular text-xs  px-2 py-1 rounded-md">
+          NEW
         </span>
+      ) : (
+        discount && (
+          <span className="absolute z-10 top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md">
+            -{discount}%
+          </span>
+        )
       )}
 
       {/* Product Image */}
@@ -83,16 +92,16 @@ const ProductCard: FC<ProductCardProps> = ({
 
         {/* Rating */}
         <div className="flex items-center mt-1">
-        {Array.from({ length: 5 }).map((_, index) => (
-         <span
-           key={index}
-           className={`text-[#FFAD33] ${
-             index < rating ? "text-[#FFAD33]" : "text-text2 opacity-25"
-           }`}
-         >
-           ★
-         </span>
-       ))}
+          {Array.from({ length: 5 }).map((_, index) => (
+            <span
+              key={index}
+              className={`text-[#FFAD33] ${
+                index < rating ? "text-[#FFAD33]" : "text-text2 opacity-25"
+              }`}
+            >
+              ★
+            </span>
+          ))}
           <span className="ml-2 text-sm text-gray-500">
             ({ratingPercentage.toFixed(0)})
           </span>
@@ -103,4 +112,3 @@ const ProductCard: FC<ProductCardProps> = ({
 };
 
 export default ProductCard;
-

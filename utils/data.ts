@@ -1,13 +1,13 @@
 // Sports data
 
-export const SportsData = [
+export const sportsData = [
     "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh",
     "exclusive@gmail.com",
     "+88015-88888-9999",
 ]
 
 // Account
-export const AccoutData = [
+export const accoutData = [
     "My Account",
     "Login / Register",
     "Cart",
@@ -16,7 +16,7 @@ export const AccoutData = [
 ]
 
 // Quick Link
-export const QuickLink = [
+export const quickLink = [
     "Privacy Policy",
     "Terms Of Use",
     "FAQ",
@@ -25,7 +25,7 @@ export const QuickLink = [
 
 
 // Time Data
-export const TimeData = [
+export const timeData = [
     {
         heading: "days",
         content: "03"
@@ -47,7 +47,7 @@ export const TimeData = [
 
 // Flase Sales data
 
-export const FlashSale = [
+export const flashSale = [
     {
         imageSrc: "/flashSales/01.png",
         name: "HAVIT HV-G92 Gamepad",
@@ -80,7 +80,7 @@ export const FlashSale = [
 
 // Best Selling Porducts
 
-export const BsProducst = [
+export const bsProducst = [
     {
         url: "/bsProducts/01.png",
         name: "The north coat",
@@ -112,5 +112,66 @@ export const BsProducst = [
         discount: 25,
         rating: 3.25,
         dis: 0
+    },
+]
+
+// Explore Our Products
+
+export const ourProductsData = [
+    {
+        url: "/ourProducts/01.png",
+        name: "Breed Dry Dog Food",
+        price: 100,
+        rating: 2.25,
+        new: false
+    },
+    {
+        url: "/ourProducts/02.png",
+        name: "CANON EOS DSLR Camera",
+        price: 360,
+        rating: 2.25,
+        new: false
+    },
+    {
+        url: "/ourProducts/03.png",
+        name: "ASUS FHD Gaming Laptop",
+        price: 700,
+        rating: 2.25,
+        new: false
+    },
+    {
+        url: "/ourProducts/04.png",
+        name: "Curology Product Set ",
+        price: 500,
+        rating: 2.25,
+        new: false
+    },
+    {
+        url: "/ourProducts/05.png",
+        name: "Kids Electric Car",
+        price: 960,
+        rating: 2.25,
+        new: true
+    },
+    {
+        url: "/ourProducts/06.png",
+        name: "Jr. Zoom Soccer Cleats",
+        price: 1160,
+        rating: 2.25,
+        new: false
+    },
+    {
+        url: "/ourProducts/07.png",
+        name: "GP11 Shooter USB Gamepad",
+        price: 660,
+        rating: 2.25,
+        new: true
+    },
+    {
+        url: "/ourProducts/08.png",
+        name: "Quilted Satin Jacket",
+        price: 660,
+        rating: 2.25,
+        new: false
     },
 ]

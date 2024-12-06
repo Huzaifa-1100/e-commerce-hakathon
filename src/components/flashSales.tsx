@@ -1,5 +1,5 @@
 import React from "react";
-import { FlashSale } from "../../utils/data";
+import { flashSale } from "../../utils/data";
 import ProductCard from "./sub/productCard";
 import CardHeading from "./sub/cardHeading";
 import ViewButton from "./sub/viewButton";
@@ -20,15 +20,14 @@ const FlashSales = () => {
       </div>
       {/* Bottom cards */}
       <div className="my-10 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
-        {FlashSale.map((product, index) => (
+        {flashSale.map((product, index) => (
           <ProductCard
             key={index}
             imageSrc={product.imageSrc}
             name={product.name}
             price={product.price}
             discount={product.discount}
-            rating={product.rating}
-          />
+            rating={product.rating} isNeew={false}          />
         ))}
       </div>
 

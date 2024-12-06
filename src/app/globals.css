@@ -100,6 +100,7 @@
   font-style: normal;
 }
 
+
 /* Wrapper for set max with of webpage content on any screen */
 .wrapper {
   @apply max-w-[1170px] mx-auto px-4;
